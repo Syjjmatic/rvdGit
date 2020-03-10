@@ -12,7 +12,6 @@ namespace robotsVDinosResubmit
         {
             type = "Blaster";
             attackPower = 30;
-            speed = 2;
         }
     }
 }

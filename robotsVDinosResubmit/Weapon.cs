@@ -10,10 +10,5 @@ namespace robotsVDinosResubmit
     {
         public string type;
         public int attackPower;
-        public int speed;
-        public Weapon()
-        {
-
-        }
     }
 }

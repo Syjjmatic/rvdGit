@@ -8,7 +8,7 @@ namespace robotsVDinosResubmit
 {
     class Fleet
     {
-        List<Robot> robotFleet;
+        public List<Robot> robotFleet;
 
         public Fleet()
         {

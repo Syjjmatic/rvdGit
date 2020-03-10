@@ -10,6 +10,11 @@ namespace robotsVDinosResubmit
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to Robots v. Dinosaurs!");
+            System.Threading.Thread.Sleep(2000);
+            Battlefield battlefield = new Battlefield();
+            battlefield.Initialize();
+            Console.ReadLine();
         }
     }
 }

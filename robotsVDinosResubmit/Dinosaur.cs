@@ -8,10 +8,9 @@ namespace robotsVDinosResubmit
 {
     class Dinosaur
     {
-        string type;
-        int health;
-        int powerLevel;
-        int attackPower;
+        public string type;
+        public int health, powerLevel, attackPower;
+
         public Dinosaur(int i)
         {
             type = SetDinoType(i);
@@ -22,8 +21,14 @@ namespace robotsVDinosResubmit
 
         string SetDinoType(int i)
         {
-            Console.WriteLine("Set dinosaur" + i + "type:");
+            Console.Clear();
+            Console.WriteLine("Set dinosaur " + i + " type:");
             return Console.ReadLine();
+        }
+        
+        public void Attack(int health)
+        {
+            health -= attackPower;
         }
     }
 }

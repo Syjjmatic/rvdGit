@@ -8,10 +8,9 @@ namespace robotsVDinosResubmit
 {
     class Robot
     {
-        string name;
-        int health;
-        int powerLevel;
-        Weapon weapon;
+        public string name;
+        public int health, powerLevel;
+        public Weapon weapon;
 
         public Robot(int i)
         {
@@ -23,7 +22,8 @@ namespace robotsVDinosResubmit
 
         public string SetName(int i)
         {
-            Console.WriteLine("Set robot" + i + "name: ");
+            Console.Clear();
+            Console.WriteLine("Set robot " + i + " name: ");
             return Console.ReadLine();
         }
 
@@ -31,7 +31,7 @@ namespace robotsVDinosResubmit
         {
             while (true)
             {
-                Console.WriteLine("Choose a weapon:\n" +
+                Console.WriteLine("\nChoose a weapon:\n" +
                     "[1] Greatsword\n" +
                     "[2] Blaster");
                 switch (Console.ReadLine())
@@ -45,7 +45,11 @@ namespace robotsVDinosResubmit
                         break;
                 }
             }
+        }
 
+        public void Attack(int health)
+        {
+            health -= weapon.attackPower;
         }
     }
 }

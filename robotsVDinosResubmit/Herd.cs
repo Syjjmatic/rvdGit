@@ -8,7 +8,7 @@ namespace robotsVDinosResubmit
 {
     class Herd
     {
-        List<Dinosaur> dinosaurHerd;
+        public List<Dinosaur> dinosaurHerd;
 
         public Herd()
         {

@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace robotsVDinosResubmit
 {
-    class Greatsword : Weapon
+    static class RNG
     {
-        public Greatsword()
-        {
-            type = "Greatsword";
-            attackPower = 50;
-        }
+        public static Random random = new Random();
     }
 }
