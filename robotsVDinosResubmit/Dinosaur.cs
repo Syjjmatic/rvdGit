@@ -12,5 +12,18 @@ namespace robotsVDinosResubmit
         int health;
         int powerLevel;
         int attackPower;
+        public Dinosaur(int i)
+        {
+            type = SetDinoType(i);
+            health = 120;
+            powerLevel = 100;
+            attackPower = 20;         
+        }
+
+        string SetDinoType(int i)
+        {
+            Console.WriteLine("Set dinosaur" + i + "type:");
+            return Console.ReadLine();
+        }
     }
 }

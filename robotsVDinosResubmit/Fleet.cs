@@ -12,7 +12,7 @@ namespace robotsVDinosResubmit
 
         public Fleet()
         {
-            robotFleet = new List<Robot> { new Robot(), new Robot(), new Robot() };
+            robotFleet = new List<Robot> { new Robot(1), new Robot(2), new Robot(3) };
         }
     }
 }

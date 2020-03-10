@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace robotsVDinosResubmit
 {
-    class Weapon
+    public class Weapon
     {
+        public string type;
+        public int attackPower;
+        public int speed;
+        public Weapon()
+        {
+
+        }
     }
 }

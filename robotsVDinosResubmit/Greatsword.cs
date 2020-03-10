@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace robotsVDinosResubmit
 {
-    class Herd
+    class Greatsword : Weapon
     {
-        List<Dinosaur> dinosaurHerd;
-
-        public Herd()
+        public Greatsword()
         {
-            dinosaurHerd = new List<Dinosaur> { new Dinosaur(1), new Dinosaur(2), new Dinosaur(3) };
+            type = "Greatsword";
+            attackPower = 50;
+            speed = 3;
         }
     }
 }
